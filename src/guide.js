@@ -42,14 +42,6 @@
   addEventListener('hashchange', openFromHash);
   openFromHash();
 
-  // Close the section menu after choosing, or on Escape / outside tap.
-  const menu = document.querySelector('.menu');
-  menu.addEventListener('click', (e) => { if (e.target.closest('a')) menu.open = false; });
-  document.addEventListener('click', (e) => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
-  });
-
   // Hairline under the masthead once the page moves.
   const mast = document.querySelector('.masthead');
   const onScroll = () => mast.classList.toggle('scrolled', scrollY > 8);
