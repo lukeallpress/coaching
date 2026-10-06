@@ -125,8 +125,10 @@ details[open]::details-content { block-size: auto; }
 
 .said { display: grid; gap: 10px; }
 .said .label { color: var(--orange-ink); }
-.said blockquote { position: relative; padding-left: 16px; border-left: 2px solid var(--orange); color: var(--ink); line-height: 1.5; }
-.said blockquote::before { content: '“'; } .said blockquote::after { content: '”'; }
+/* Hanging quote marks, so quotes don't echo the open habit's orange rule */
+.said blockquote, .glossary blockquote { position: relative; padding-left: 24px; color: var(--ink); line-height: 1.5; }
+.said blockquote::before, .glossary blockquote::before { content: '“'; position: absolute; left: 0; top: -.08em; font-size: 2em; font-weight: 900; line-height: 1; color: var(--orange); font-style: normal; }
+.said blockquote::after { content: '”'; }
 
 /* ── Next session band ──────────────────────────────── */
 .band { background: var(--deep); color: #E9F1F9; padding: 40px 0 44px; position: relative; overflow: hidden; }
@@ -190,8 +192,8 @@ details[open]::details-content { block-size: auto; }
 .glossary > div { padding: 16px 0; border-bottom: 1px solid var(--line); scroll-margin-top: calc(var(--mast) + 8px); }
 .glossary dt { font-size: 18px; font-weight: 900; color: var(--deep); margin-bottom: 2px; }
 .glossary dd p { color: var(--muted); }
-.glossary blockquote { margin-top: 8px; padding-left: 14px; border-left: 2px solid var(--orange); font-style: italic; color: var(--ink); line-height: 1.5; }
-.glossary blockquote::before { content: '“'; } .glossary blockquote::after { content: '” — Luke'; font-style: normal; color: var(--muted); font-size: 14px; }
+.glossary blockquote { margin-top: 10px; font-style: italic; }
+.glossary blockquote::after { content: '” — Luke'; font-style: normal; color: var(--muted); font-size: 14px; }
 @media (min-width: 720px) { .glossary > div { display: grid; grid-template-columns: 190px 1fr; gap: 24px; } }
 
 /* ── Footer ─────────────────────────────────────────── */

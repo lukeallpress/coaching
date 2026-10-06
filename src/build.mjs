@@ -85,7 +85,7 @@ function habit(h, i) {
       <dl>${h.settings.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
     </div>`;
   return `
-<details class="habit" id="${h.id}" name="habit">
+<details class="habit" id="${h.id}" name="habit"${i === 0 ? ' open' : ''}>
   <summary>
     <span class="num">${n}</span>
     <span class="htext"><span class="htitle">${esc(h.title)}</span><span class="take">${esc(h.takeaway)}</span></span>
