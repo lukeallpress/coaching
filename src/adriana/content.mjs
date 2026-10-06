@@ -79,8 +79,8 @@ export const habits = [
 
 export const next = {
   title: 'Make the workflow repeatable.',
-  date: { iso: '2026-10-21', month: 'Oct', day: '21', weekday: 'Wednesday', when: 'Afternoon' },
-  status: 'Exact time and location to be confirmed.',
+  date: { iso: '2026-10-21T13:00-07:00', month: 'Oct', day: '21', weekday: 'Wednesday', when: '1:00 p.m.' },
+  status: 'Back at Industrious.',
   tryFirst: [
     'Dictate one real request.',
     'Prep for a meeting using connected context — then check the sources.',
