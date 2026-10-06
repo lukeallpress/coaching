@@ -52,7 +52,7 @@ ${c.css.replaceAll('../assets/', `${base}assets/`)}
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
   <div class="wrap bar">
-    <a class="brand" href="${home ? '#top' : '../'}" aria-label="${esc(meta.title)}${home ? ' — top' : ' — home'}">${mark}<span><b>${esc(meta.owner)}</b><span class="sep">/</span>AI Field Guide</span></a>
+    <a class="brand" href="${home ? '#top' : '../'}" aria-label="${esc(meta.title)}${home ? ' — top' : ' — home'}">${mark}<span><b>${esc(meta.owner)}</b><span class="sep">/</span>AI Coaching</span></a>
     <a class="next-chip" href="${home ? '' : '../'}#next"><span class="dot" aria-hidden="true"></span>Next · <b>${esc(next.date.month)} ${esc(next.date.day)}</b></a>
   </div>
 </header>
@@ -61,7 +61,7 @@ ${body}
 </main>
 <footer class="foot">
   <div class="wrap">
-    <p>${mark}<span>A personal field guide for ${esc(meta.owner)} · Coaching with <a href="${meta.coach.url}">${esc(meta.coach.name)}</a></span></p>
+    <p>${mark}<span>AI coaching reference for ${esc(meta.owner)} · with <a href="${meta.coach.url}">${esc(meta.coach.name)}</a></span></p>
   </div>
 </footer>
 <div class="toast" role="status" aria-live="polite"></div>
@@ -163,7 +163,7 @@ function subHead(eyebrow, title, sub) {
   return `
 <section class="sub-head">
   <div class="wrap narrow">
-    <a class="back" href="../"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Field guide</a>
+    <a class="back" href="../"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Coaching reference</a>
     <p class="eyebrow">${esc(eyebrow)}</p>
     <h1>${esc(title)}</h1>
     ${sub ? `<p class="lede">${esc(sub)}</p>` : ''}

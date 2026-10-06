@@ -1,4 +1,4 @@
-// Adriana's AI Field Guide — content records.
+// Adriana Murrieta · AI Coaching Reference — content records.
 // Public copy only. The session transcript and private notes never belong in this repo.
 // Quotes are Luke's words from the sessions, trimmed but not reworded; keep them free of
 // names, family details, and project specifics.
@@ -6,15 +6,15 @@
 
 export const meta = {
   slug: 'adriana',
-  title: 'Adriana’s AI Field Guide',
-  description: 'A personal field guide to working with AI — five habits, session notes, and the vocabulary behind them.',
+  title: 'Adriana Murrieta · AI Coaching Reference',
+  description: 'A personal AI coaching reference — five habits, session notes, and the vocabulary behind them.',
   owner: 'Adriana',
   coach: { name: 'Luke Allpress', url: 'https://lukeallpress.github.io' },
 };
 
 export const intro = {
-  headline: ['More capacity.', 'Less mental overhead.'],
-  lede: 'Five habits. Tap one for a prompt to copy.',
+  headline: ['Adriana Murrieta', 'AI Coaching Reference'],
+  lede: 'AI to help you do more.',
 };
 
 export const habits = [
